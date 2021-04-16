@@ -1,0 +1,11 @@
+#Copyright (c) 2021, salesforce.com, inc.
+#All rights reserved.
+#SPDX-License-Identifier: BSD-3-Clause
+#For full license text, see the LICENSE file in the repo root or https://#opensource.org/licenses/BSD-3-Clause
+batchsize: 0
+lm-weight: 0.3
+beam-size: 20
+penalty: 0.1
+maxlenratio: 0.0
+minlenratio: 0.0
+ctc-weight: 0.3

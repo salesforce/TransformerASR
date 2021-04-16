@@ -1,0 +1,16 @@
+#Copyright (c) 2021, salesforce.com, inc.
+#All rights reserved.
+#SPDX-License-Identifier: BSD-3-Clause
+#For full license text, see the LICENSE file in the repo root or https://#opensource.org/licenses/BSD-3-Clause
+process:
+  # these three processes are a.k.a. SpecAugument
+  - type: "freq_mask"
+    F: 30
+    n_mask: 2
+    inplace: true
+    replace_with_zero: true
+  - type: "time_mask"
+    T: 40
+    n_mask: 2
+    inplace: true
+    replace_with_zero: true

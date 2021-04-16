@@ -1,0 +1,11 @@
+- type: "cmvn"
+  cmvn_type: "global"
+  stats: "/export/home/speech-datasets/wsj/asr1/dump/fbank_pitch/global_cmvn.ark"
+- type: "spec_augment"
+  max_time_warp: 5
+  max_freq_width: 30
+  n_freq_mask: 2
+  max_time_width: 40
+  n_time_mask: 2
+  inplace: True
+  replace_with_zero: false

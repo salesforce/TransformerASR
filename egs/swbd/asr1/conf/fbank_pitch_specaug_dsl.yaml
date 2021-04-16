@@ -1,0 +1,18 @@
+#Copyright (c) 2021, salesforce.com, inc.
+#All rights reserved.
+#SPDX-License-Identifier: BSD-3-Clause
+#For full license text, see the LICENSE file in the repo root or https://#opensource.org/licenses/BSD-3-Clause
+- type: "fbank_pitch"
+  num_mel_bins: 80
+  sample_frequency: 8000
+- type: "cmvn"
+  cmvn_type: "global"
+  stats: "/export/home/speech-datasets/swbd/asr1/dump/fbank_pitch/swbd1_train/global_cmvn.ark"
+- type: "spec_augment"
+  max_time_warp: 5
+  max_freq_width: 30
+  n_freq_mask: 2
+  max_time_width: 40
+  n_time_mask: 2
+  inplace: True
+  replace_with_zero: false
